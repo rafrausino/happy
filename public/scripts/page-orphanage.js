@@ -19,7 +19,7 @@ const icon = L.icon({
   popupAnchor: [170, 2],
 });
 
-// create and adn marker
+// create and add marker
 L.marker([-30.1087957, -51.3172272], { icon }).addTo(map);
 
 // image gallery
