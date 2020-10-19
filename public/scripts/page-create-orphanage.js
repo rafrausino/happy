@@ -35,6 +35,7 @@ function addPhotoField() {
   //pegar o container para duplicar .new-upload
   const fieldsContainer = document.querySelectorAll(".new-upload");
   //realizar o clone da última imagem adicionada.active
+
   const newFieldContainer = fieldsContainer[
     fieldsContainer.length - 1
   ].cloneNode(true);
@@ -81,4 +82,13 @@ function toggleSelect(event) {
   const input = document.querySelector('[name="open_on_weekends"]');
 
   input.value = button.dataset.value;
+}
+
+function validate(event) {
+  // validar se lat e lng estao preenchidos
+  const needsLatAndLng = false;
+  if (needsLatAndLng) {
+    event.preventDefault();
+    alert("Selecione um ponto no mapa");
+  }
 }
